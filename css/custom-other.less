@@ -1,0 +1,25 @@
+.navbar {
+	.container {
+		padding: 20px 0 20px 20px;
+		border-bottom: 1px solid @gray;
+	}
+	.navbar-nav {
+		float: right;
+		li a {
+			text-align: center;
+		}
+	}
+}
+
+//responsive nav fixes
+@media (max-width: @screen-xs-min) {
+	.navbar .container {
+		.navbar-nav {
+			float: inherit;
+			li a {
+				text-align: center;
+			}
+		}
+	}
+}
+
