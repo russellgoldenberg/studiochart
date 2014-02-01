@@ -3,6 +3,7 @@
 @extraLightGray: #aaa;
 @mediumGray: #555;
 @darkGray: #333;
+@special: #9C397D;
 @sansSerif: 'Montserrat', Helvetica, sans-serif;
 @sansSerifAlt: 'Share Tech', Georgia, serif;
 
@@ -29,6 +30,7 @@ h1,h2,h3,h4 {
 .logo {
 	float: left;
 	a {
+		font-size: 44px;
 		font-family: @sansSerif;
 	}
 }
@@ -49,11 +51,23 @@ h1,h2,h3,h4 {
 }
 
 .container {
-	margin-top: 40px;
+	margin-top: 15px;
 }
 
 .subtitle {
 	text-align: center;
+}
+
+.slider a {
+	position: relative;
+}
+
+.slider span {
+	position: absolute;
+	right: 8px;
+	bottom: 10px;
+	font-size: 1.6em;
+	color: white;
 }
 
 .slider img {
@@ -84,13 +98,16 @@ h1,h2,h3,h4 {
 	}
 }
 .detailText {
-	.projecTitle {
+	.projectTitle {
 		text-transform: uppercase;
 		border-bottom: 1px solid @extraLightGray;
 		border-top: 1px solid @extraLightGray;
 		padding-bottom: 10px;
 		padding-top: 10px;
 		margin-bottom: 10px;
+	}
+	.projectInfo {
+
 	}
 }
 .projectImage {
@@ -102,18 +119,26 @@ h1,h2,h3,h4 {
 /* #Media Queries */
 
 /* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {}
+@media only screen and (max-width: 959px) {
+}
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	/*.container {
+		margin-top: 40px;
+	}*/
+}
 
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
+	/*.container {
+		margin-top: 40px;
+	}*/
 	.nav {
 		float: none;
 		text-align: center;
 		li {
-			width: 25%;
+			width: 20%;
 			text-align: center;
 			margin: 0;
 		}
@@ -128,4 +153,38 @@ h1,h2,h3,h4 {
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 479px) {
+	.container .detailText {
+		margin: 0 10px 20px 5px;
+	}
+	.container .row {
+		margin-bottom: 0;
+	}
+}
+
+.special {
+	color: @special;
+}
+
+.heavy {
+	font-weight: 700;
+}
+
+.center {
+	text-align: center;
+}
+
+.bigger {
+	font-size: 1.3em;
+	line-height: 1.6;
+}
+.alt {
+	font-family: @sansSerifAlt;
+}
+.start {
+	display: none;
+}
+
+li a:hover {
+	color: @special;
+}

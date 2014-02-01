@@ -23,6 +23,7 @@ h4 {
   float: left;
 }
 .logo a {
+  font-size: 44px;
   font-family: 'Montserrat', Helvetica, sans-serif;
 }
 .nav {
@@ -40,10 +41,20 @@ h4 {
   border-bottom: 2px solid #555555;
 }
 .container {
-  margin-top: 40px;
+  margin-top: 15px;
 }
 .subtitle {
   text-align: center;
+}
+.slider a {
+  position: relative;
+}
+.slider span {
+  position: absolute;
+  right: 8px;
+  bottom: 10px;
+  font-size: 1.6em;
+  color: white;
 }
 .slider img {
   width: 100%;
@@ -65,7 +76,7 @@ h4 {
   margin: 10px;
   width: auto;
 }
-.detailText .projecTitle {
+.detailText .projectTitle {
   text-transform: uppercase;
   border-bottom: 1px solid #aaaaaa;
   border-top: 1px solid #aaaaaa;
@@ -83,16 +94,21 @@ h4 {
 }
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  
+  /*.container {
+  		margin-top: 40px;
+  	}*/
 }
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
+  /*.container {
+  		margin-top: 40px;
+  	}*/
   .nav {
     float: none;
     text-align: center;
   }
   .nav li {
-    width: 25%;
+    width: 20%;
     text-align: center;
     margin: 0;
   }
@@ -107,5 +123,32 @@ h4 {
 }
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
-  
+  .container .detailText {
+    margin: 0 10px 20px 5px;
+  }
+  .container .row {
+    margin-bottom: 0;
+  }
+}
+.special {
+  color: #9c397d;
+}
+.heavy {
+  font-weight: 700;
+}
+.center {
+  text-align: center;
+}
+.bigger {
+  font-size: 1.3em;
+  line-height: 1.6;
+}
+.alt {
+  font-family: 'Share Tech', Georgia, serif;
+}
+.start {
+  display: none;
+}
+li a:hover {
+  color: #9c397d;
 }
