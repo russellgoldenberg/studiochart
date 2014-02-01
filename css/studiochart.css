@@ -1,0 +1,111 @@
+/* Custom Styles */
+p {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  color: #777777;
+}
+li,
+a {
+  font-family: 'Share Tech', Georgia, serif;
+  color: #555555;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-weight: 700;
+  color: #333333;
+}
+.logo {
+  float: left;
+}
+.logo a {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+}
+.nav {
+  float: right;
+}
+.nav li {
+  float: left;
+  text-align: right;
+  font-size: 1.1em;
+  margin: 0 10px;
+  text-transform: uppercase;
+  line-height: 50px;
+}
+.nav li .currentPage {
+  border-bottom: 2px solid #555555;
+}
+.container {
+  margin-top: 40px;
+}
+.subtitle {
+  text-align: center;
+}
+.slider img {
+  width: 100%;
+}
+#controls {
+  margin-top: 20px;
+  text-align: center;
+}
+#controls a {
+  font-size: 2em;
+  margin: 5px;
+}
+.hide {
+  display: none;
+  opacity: 0;
+}
+.projects ul li {
+  float: left;
+  margin: 10px;
+  width: auto;
+}
+.detailText .projecTitle {
+  text-transform: uppercase;
+  border-bottom: 1px solid #aaaaaa;
+  border-top: 1px solid #aaaaaa;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+.projectImage img {
+  width: 100%;
+}
+/* #Media Queries */
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+  
+}
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  .nav {
+    float: none;
+    text-align: center;
+  }
+  .nav li {
+    width: 25%;
+    text-align: center;
+    margin: 0;
+  }
+  .logo {
+    float: none;
+    text-align: center;
+  }
+}
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  
+}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  
+}

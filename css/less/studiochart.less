@@ -1,0 +1,131 @@
+/* Custom Styles */
+@lightGray: #777;
+@extraLightGray: #aaa;
+@mediumGray: #555;
+@darkGray: #333;
+@sansSerif: 'Montserrat', Helvetica, sans-serif;
+@sansSerifAlt: 'Share Tech', Georgia, serif;
+
+p {
+	font-family: @sansSerif;
+	color: @lightGray;
+}
+
+li, a {
+	font-family: @sansSerifAlt;
+	color: @mediumGray;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,h2,h3,h4 {
+	font-family: @sansSerif;
+	font-weight: 700;
+	color: @darkGray;
+}
+
+.logo {
+	float: left;
+	a {
+		font-family: @sansSerif;
+	}
+}
+
+.nav {
+	float: right;
+	li {
+		float: left;
+		text-align: right;
+		font-size: 1.1em;
+		margin: 0 10px;
+		text-transform: uppercase;
+		line-height: 50px;
+		.currentPage {
+			border-bottom: 2px solid @mediumGray;
+		}
+	}
+}
+
+.container {
+	margin-top: 40px;
+}
+
+.subtitle {
+	text-align: center;
+}
+
+.slider img {
+	width: 100%;
+}
+
+#controls {
+	margin-top: 20px;
+	text-align: center;
+	a {
+		font-size: 2em;
+		margin: 5px;
+	}
+}
+
+.hide {
+	display: none;
+	opacity: 0;
+}
+
+// design page
+
+.projects {
+	ul li {
+		float: left;
+		margin: 10px;
+		width: auto;
+	}
+}
+.detailText {
+	.projecTitle {
+		text-transform: uppercase;
+		border-bottom: 1px solid @extraLightGray;
+		border-top: 1px solid @extraLightGray;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+.projectImage {
+	img {
+		width: 100%;
+	}
+}
+
+/* #Media Queries */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	.nav {
+		float: none;
+		text-align: center;
+		li {
+			width: 25%;
+			text-align: center;
+			margin: 0;
+		}
+	}
+	.logo {
+		float: none;
+		text-align: center;
+	}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {}
