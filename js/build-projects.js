@@ -1,7 +1,7 @@
 //design project data
 var _projects = {
 	"new-construction": {
-		info: ["studioCHART is prepared to bring all of its design to life. We offer a full range of contracting, project management, and construction services."],
+		info: ["studioCHART is prepared to bring all of its designs to life. We offer a full range of contracting, project management, and construction services."],
 		img: 3
 	},
 	"rennovation": {
@@ -13,7 +13,7 @@ var _projects = {
 		img: 2
 	},
 	"stone": {
-		info: ["At studioCHART or focus is on outdoor living space and the married between the natural world and our own build environment. Stone walls, outdoors showers, vegetable gardens, and outdoor kitchens should be part of every home. "],
+		info: ["At studioCHART our focus is on outdoor living space and the marriage between the natural world and our own build environment. Stone walls, outdoor showers, vegetable gardens, and outdoor kitchens should be part of every home. "],
 		img: 4
 	},
 	"ceramic": {
