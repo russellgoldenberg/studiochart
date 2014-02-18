@@ -28,15 +28,17 @@ h4 {
 }
 .nav {
   float: right;
+  margin-bottom: 0;
 }
 .nav li {
   float: left;
   text-align: right;
   font-size: 1.1em;
-  margin: 0 10px;
+  margin: 0 0 0 10px;
   text-transform: uppercase;
   line-height: 50px;
 }
+
 .nav li .currentPage {
   border-bottom: 2px solid #555555;
 }
@@ -87,6 +89,18 @@ h4 {
 .projectImage img {
   width: 100%;
 }
+
+.social {
+  text-align: right;
+}
+
+.social a {
+  margin-left: 10px;
+}
+.headerrow {
+  margin-bottom: 0;
+}
+
 /* #Media Queries */
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
@@ -100,6 +114,10 @@ h4 {
 }
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
+
+  .social {
+    display: none;
+  }
   /*.container {
   		margin-top: 40px;
   	}*/
